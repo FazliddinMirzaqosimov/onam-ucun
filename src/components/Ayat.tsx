@@ -6,7 +6,7 @@ function Ayat({ ayat }: any) {
   function handleClick() {
     console.log(1);
 
-    setAyatAudio({...ayatAudio,src:ayat.audio});
+    setAyatAudio({ ...ayatAudio, src: ayat.audio });
     console.log(getSurahs().ayatAudio);
   }
   return (
@@ -17,7 +17,7 @@ function Ayat({ ayat }: any) {
       <br />
 
       <center>
-        <h1>{ayat.text}</h1>
+        <h1 style={{ fontSize: 50 }}>{ayat.text}</h1>
       </center>
       <br />
       <hr />
