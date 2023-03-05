@@ -1,4 +1,3 @@
-import { ConfigProvider } from "antd";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
@@ -9,11 +8,9 @@ import SurahProvider from "./provider/SurahProvider";
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ConfigProvider>
-        <SurahProvider>
-          <App />
-        </SurahProvider>
-      </ConfigProvider>
+      <SurahProvider>
+        <App />
+      </SurahProvider>
     </BrowserRouter>
   </React.StrictMode>
 );
