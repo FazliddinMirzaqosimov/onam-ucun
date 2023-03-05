@@ -25,7 +25,7 @@ function SurahProvider({ children }: { children: React.ReactNode }) {
   });
   const refreshSurahs = () => {
     axios
-      .get("http://api.alquran.cloud/v1/surah")
+      .get("https://api.alquran.cloud/v1/surah")
       .then((res) => {
         setSurahsState({
           ...surahsState,

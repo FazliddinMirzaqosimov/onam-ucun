@@ -17,7 +17,7 @@ function Ayats(): JSX.Element {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://api.alquran.cloud/v1/surah/${id}/ar.alafasy`)
+      .get(`https://api.alquran.cloud/v1/surah/${id}/ar.alafasy`)
       .then((res) => setAyats(res.data.data.ayahs))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));
